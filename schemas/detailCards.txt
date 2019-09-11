@@ -1,0 +1,20 @@
+- sourceDocumentId:auto generated:UUID        comes from merchant-app main doc.
+- documentID:auto generated:UUID
++ cardContent:map
+    - externalOuterLink:string
+    - headline:string
+    - icon:string                             material icon text
+    + tags:array                              manual  
+        0:                                    1st 2nd ...
+        1:                                    contentType
+        2:                                    eventCode in customers system
+        3:                                     ....
+    - title:string
+- date:timestamp
+- defaultOrder:number
++ filters:map
+    - default:string                          comes from tag[0]
+    - contentType:string                      comes from tag[1]
+    - ...                                     comes from segmentation
+    - dayPartitioning:string                  morning/afternoon/evening: rule based
+    

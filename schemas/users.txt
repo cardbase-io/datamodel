@@ -1,0 +1,22 @@
+- documentID:auto generated:UUID
+- uid: string
+- displayName:string                        filled by google
+- email:string                              filled by google
++ optIn:array
+    + 0:map
+        - phoneNumber:string                    additional consent to be filled by google
+        - channel:                              EMAIL/WEB
+        - description:string                    MANDATORY_UPDATES for EMAIL/MARKETING_COMMUNICATION by EMAIL/LOCATION_TRACKING 
+        - isAllowed:boolean
+        - type:string                           MANDATORY_UPDATES=0, MARKETING_COMMUNICATION, LOCATION_TRACKING, STAY_SIGNED_IN=3
++ termsPrivacy:array
+    - 0:string                                  explanation
+    - 1
+    - 2
++ roles:map
+    + platform:array                            default=viewer:owner:admin
+        - 0:viewer                              
+        - 1
+    + streaming:array                           broadcaster:translator:listening
+        - 0                                        
+        - 1

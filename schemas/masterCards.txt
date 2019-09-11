@@ -1,0 +1,14 @@
+- sourceDocumentId:auto generated:UUID        comes from merchant-app main doc.
+- documentID:auto generated:UUID
++ cardContent:map
+    - imageAltText:string
+    - imageSrcURL:string                      firestorage link
+    - routerLink:string                       detail/documentID
+    - subTitle:string                         convention center etc.
+    - title:string                            event name etc.
++ cardHeader:map
+    - avatarURL:string
+    - title:string
++ filters:map
+    - default:geopoint                        lat:long
+    - locationName                            subtitle
