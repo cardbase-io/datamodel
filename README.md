@@ -16,4 +16,5 @@ After fork, (into your own github account)
     - creates a bucket in your gcp account where your firebase projects resides.
     - copies files from dataModel/ folder into that bucket. Then makes it public w/ Storage admin permission. 
         - If you do not want that, change script to create bucket in all firebase projects, and Upload that data to that buckets !
+5. Use `backup` folder to export your own data.
   
